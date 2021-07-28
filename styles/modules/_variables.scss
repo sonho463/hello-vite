@@ -1,0 +1,31 @@
+// 最大幅
+$contentMaxWidth: 1440px;
+
+// 色
+$--main-primary:  #1b2f60;
+$--main-secondary:#f0f8ff;
+$--shadow-cBlue: #b0c4de;
+$--font-cBlack: #333;
+$--font-cWhite: #fff;
+
+
+//animation
+@mixin animation(
+  $name,
+  $duration: 1s,
+  $timing-function: ease,
+  $delay: 0s,
+  $iteration-count: 1,
+  $direction: normal,
+  $fill-mode: forwards
+) {
+  animation: {
+    name: $name;
+    duration: $duration;
+    timing-function: $timing-function;
+    delay: $delay;
+    iteration-count: $iteration-count;
+    direction: $direction;
+    fill-mode: $fill-mode;
+  }
+}

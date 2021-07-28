@@ -1,0 +1,260 @@
+//レイアウト確認
+* {
+  outline: dashed 1px skyblue;
+}
+
+body {
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
+  max-width: 1600px;
+  text-align: justify;
+  background-color: $--main-secondary;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+// マージン・パディング
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+.mb-md {
+  margin-bottom: 56px !important;
+}
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+
+// 箇条書きスタイル消す
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+// emシリーズ
+
+.yellow-line {
+  background: linear-gradient(transparent 60%, gold 0%);
+}
+
+.blue-line {
+  background: linear-gradient(transparent 60%, lightcyan 0%);
+}
+
+// common-class
+.ly_cont {
+  margin: 0 auto;
+  padding: 100px 250px;
+  color: $--font-cBlack;
+}
+
+.ly_cont_bgBlue {
+  background-color: $--main-primary;
+  color: #fff;
+}
+
+.ly_intro {
+  padding: 20px 10px;
+	margin-bottom: 100px;
+}
+
+.bl_heading {
+  text-align: left;
+  font-size: 3rem;
+}
+
+.bl_description {
+  font-size: 1.25rem;
+}
+
+.bl_description__white {
+  font-size: 1.25rem;
+}
+
+// header
+.ly_header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.ly_header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.el_headerLogo {
+  width: 80px;
+}
+
+.bl_headerNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  gap: 20px;
+  background-color: $--main-secondary;
+  border-radius: 20px;
+}
+
+.hl_shadow {
+  box-shadow: 3px 3px 5px $--shadow-cBlue, 0px 3px 5px $--shadow-cBlue;
+}
+
+.bl_headerNav_item {
+  width: fit-content;
+  text-align: center;
+}
+
+.bl_headerNav_link {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  &:hover {
+    text-decoration: underline;
+    background-color: $--main-primary;
+    color: #fff;
+    transition: 0.7s;
+  }
+}
+
+// hero >>>
+.ly_cont_hero {
+  width: 80%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  margin-top: 100px;
+}
+
+.bl_hero_heading {
+  font-size: 220px;
+  line-height: 1;
+}
+
+.char {
+  display: inline-block;
+  margin-right: -50px;
+  transform: translateX(-300px);
+}
+
+.bl_hero_subHeading {
+  font-size: 4vw;
+  line-height: 1;
+}
+
+.bl_hero_description {
+  font-size: 2vw;
+}
+
+.el_arrow_wrapper {
+  width: 40%;
+  position: absolute;
+  right: 100px;
+  z-index: -1;
+}
+// <<< hero
+
+// services
+
+.bl_card_wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.card {
+  margin-top: 50px;
+}
+
+.card_image {
+  width: 300px;
+  margin: 0 auto;
+}
+
+// price
+
+// skills
+.el_heading_wrapper {
+  background-color: $--main-primary;
+  border-radius: 50px;
+}
+
+.el_heading_skills {
+  padding: 0 50px;
+  color: #fff;
+}
+
+.bl_skills_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.bl_article {
+  display: flex;
+  gap: 20px;
+  width: 45%;
+  margin-bottom: 50px;
+}
+
+.el_article_image {
+  flex: 1;
+  height: inherit;
+  overflow: hidden;
+}
+
+.bl_skills_txtWrapper {
+  flex: 2;
+}
+
+.el_link_white {
+  color: skyblue;
+  &:hover,
+  &:focus {
+    color: white;
+  }
+}
+
+// price
+
+//performance
+
+.bl_article_pfm {
+  width: 100%;
+  font-size: 24px;
+  img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+//about
+
+// footer
